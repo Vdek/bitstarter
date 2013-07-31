@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <title>Bits For Work: Online Services for the Digital Economy</title>
   <meta name="viewport" content ="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+  <!-- Latest compiled and minified CSS for Bootstrap 3! -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+  <!-- Latest compiled and minified JavaScript  for Bootstrap 3!-->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+  <!-- Fonts and stuff -->
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
   <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+  <!-- Jquery  -->
   <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
   <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
   <style type="text/css">
@@ -19,10 +23,10 @@
         padding-top: 60px;
       }
       .linediv-l {
-        border-right: 1px white solid;
+        border-right: 1px black solid;
       }
       .linediv-r {
-        border-left: 1px white solid;
+        border-left: 1px black solid;
       }
     }
 
@@ -76,7 +80,7 @@
       text-align: center;
     }
     .statistics h3, .statistics p{
-      color: white;
+      color: black;
     }
 
     /* Marketing Copy and Footer */
@@ -103,205 +107,153 @@
     </style>
   </head>
 <body>
-
-  <!-- Mobile-friendly navbar from the bootstrap example -->
-  <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="brand" href="#">Bits For Work</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse-->
-      </div>
-    </div>
-  </div>
-
-
-  <!-- We use row-fluid inside containers to achieve a resizable layout-->
-  <!-- blods.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-  <!-- http://stackoverflow.com/a/12270322 -->
+<!-- Jumbotron Narrow for Inspiration combined with the Fixed Navbar -->
+<div class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <!-- Font and paired font of .heading/subheading and body from Google Fonts -->
-    <!-- www.google.com/fonts/specimen/Ubuntu -->
-    <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-    <div class="row-fluid heading">
-      <div class="span12">
-        <h1>Bits For Work</h1>
-      </div>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Bits For Work</a>
+    <div class="nav-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul> 
     </div>
-    <div class="row-fluid subheading">
-      <div class="span12">
-        <!-- Special typography from Bootstrap for lead paragraph. -->
-        <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-        <p class="lead">A global online exchange for services and digital currencies.</p>
-      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="col-lg-6">
+    <div class="jumbotron">
+      <h1>Bits For Work</h1>
+      <p class="lead">Selling services in the digital age!</p>
     </div>
-    <div class="row-fluid pitch">
-      <div class="span5 offset1 video">
-        <img class="img-polaroid" src="http://placehold.it/480x300">
-      </div>
-
-      <!-- We define a new 'actions' div to contain statistics, order, and share buttons -->
-      <div class="span5 actions">
-        <div class="span8 offset2">
-          <div class="statistics">
-            <div class="span4">
-              <!-- linediv-l and linediv-r give dividing lines taht look different in horizontal and vertical layouts, illustrating media queries -->
-              <div class="linediv-l">
-                <h3>0</h3> <p>backers</p>
+  </div>
+  <div class="col-lg-6"> 
+     <div class="jumbotron"> 
+        <div class="container">
+            <div class="statistics">
+              <div class="col-lg-4 line-div-l">
+                  <h4>Backers</h4>
+                  <h3>0</h3>
+              </div>
+              <div class="col-lg-4">
+                <h4>Funding</h4>
+                <h3>0</h3><p>of 500</p>
+              </div>
+              <div class="col-lg-4">
+                <h4>Days Left</h4>
+                <h3>45 days</h3>
+              </div>
+            <div class="col-lg-12">
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-success" style="width: 15%"></div>
+                <div class="progress-bar progress-bar-warning" style="width: 85%"></div>
               </div>
             </div>
-            <div class="span4">
-              <div class="linediv-c">
-                <h3>B⃦0</h3> <p>of B⃦500</p>
-              </div>
+            <div class="col-lg-12">
+              <p><a class="btn btn-large btn-success" href="#">Sign up today</a></p>
             </div>
-            <div class="span4">
-              <div class="linediv-r">
-                <h3>45</h3> <p>days left</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span10 offset1">
-          <!-- Bootstrap progress bar! -->
-          <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-          <div class="thermometer progress active">
-            <div class="bar bar-success" style="width: 1%;"></div>
-            <div class="bar bar-warning" style="width: 99%;"></div>
-          </div>
-        </div>
-        <div class="span6 offset3 order">
-          <!-- Standard Bootstrap Button. -->
-          <!-- http://twitter.com/github.io/bootstrap/base-css.html#buttons -->
-          <button class="btn btn-success btn-large">Sign Up</button>
-        </div>
-        <div class="span8 offset2 social">
-          <!-- Social buttons are not included in defualt Bootstrap -->
-          <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-          <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-          <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Beyond this part the marketing copy begins -->
-    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-    <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-    <!-- http://placehold.it -->
-    <div class="row-fluid section1">
-      <div class="span5 offset1 asset">
-        <img class="img-polaroid" src="http://placehold.it/480x300">
-      </div>
-      <div class="span5 copy">
-        <h3>What is Bits For Work?</h3>
-        <p>
-          Bits For Work is an online exchange for individuals and freelancers to exchange their servies and skills for bitcoins and other cryptocurrencies.
-        </p>
-        <p>
-          We're here to kickstart the Bitcoin revolution by giving you a market to trade your Bitcoins for valuable services.
-        </p>
-        <p>
-          At BFW, we don't force a maximum price on services since we believe in a fair pay for a persons work.  You set the price!
-        </p>
-      </div>
-    </div>
-
-    <div class="row-fluid section2">
-      <div class="span5 offset1 copy copy-right">
-        <h3>Why Bitcoins?</h3>
-        <p>
-          Our goal is to connect people from around the world to create a truly global exchange.
-        </p>
-        <p>
-          Bitcoin is the only currency that makes sense for the globally connected world that we live in.
-        </p>
-        <p>
-          With Bitcoins you don't have to worry about paying extraordinary fees or transferring currencies.
-        </p>
-      </div>
-      <div class="span5 asset">
-        <img class="img-polaroid" src="http://i.imgur.com/ZQekNE5.png" height=480 width=300>
-      </div>
-    </div>
-
-    <!-- For the FAQ, we introduce a little bit of javascript, using the accordion -->
-    <!-- This brings in jquery.js and bootstrap.js as dependencies -->
-    <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-    <div class="row-fluid faq">
-      <div class="span10 offset1">
-        <h3>FAQ</h3>
-        <div class="accordion" id="accordion2">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parten="accordion2" href="#collapseOne">
-                How does it work?
-              </a>
-            </div>
-            <div id="collapseOne" class="accordion-body collapse">
-              <div class="accordion-inner">
-                Freelancers can post services and jobs that they are willing to do and the price for that unit of work.  Multiple units of work can be purchased at the same time so there is no set maximum price.
-              </div>
-            </div>
-          </div>
-           <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parten="accordion2" href="#collapseTwo">
-                Is there a minimum price?
-              </a>
-            </div>
-            <div id="collapseTwo" class="accordion-body collapse">
-              <div class="accordion-inner">
-               Yes, the minimum price is 0.05B⃦ and goes up in mulitples from that.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parten="accordion2" href="#collapseThree">
-                Do you charge a fee?
-              </a>
-            </div>
-            <div id="collapseThree" class="accordion-body collapse">
-              <div class="accordion-inner">
-               Yes we do charge a fee, however it is relatively small at only 5%.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parten="accordion2" href="#collapseFour">
-                Can I use other Cryptocurrencies?
-              </a>
-            </div>
-            <div id="collapseFour" class="accordion-body collapse">
-              <div class="accordion-inner">
-               Yes, we are developing the site to accept multiple cryptocurrencies including Bitcoin and Litecoin among others.
+            <div class="col-lg-12">
+              <div class="social">
+                <!-- Social buttons are not included in defualt Bootstrap -->
+                <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+                <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+                <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+  </div>
+<div class="col-lg-12">
+<div class="row marketing">
+  <div class="col-lg-4">
+    <h1>What is it?</h1>
+    <h4>Subheading</h4>
+    <p>First bit of marketing fluff</p>
 
-    <!-- Put in a CC By-SA 3.0 License -->
-    <!-- http://creativecommons.org/license -->
-    <div class="row-fluid footer">
-      <div class="span12">
-        <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page</p>
-      </div>
-    </div>
+    <h4>Subheading</h4>
+    <p>Second bit of marketing fluff</p>
+
+    <h4>Subheading</h4>
+    <p>Third bit of marketing fluff</p>
 
   </div>
+
+  <div class="col-lg-4">
+    <h1>Why?</h1>
+    <h4>Subheading</h4>
+    <p>First bit of marketing fluff</p>
+
+    <h4>Subheading</h4>
+    <p>Second bit of marketing fluff</p>
+
+    <h4>Subheading</h4>
+    <p>Third bit of marketing fluff</p>
+
+  </div>
+
+  <div class="col-lg-4">
+    <h1>How do I join?</h1>
+    <h4>Subheading</h4>
+    <p>First bit of marketing fluff</p>
+
+    <h4>Subheading</h4>
+    <p>Second bit of marketing fluff</p>
+
+    <h4>Subheading</h4>
+    <p>Third bit of marketing fluff</p>
+
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="featurette">
+  <img class="featurette-image img-circle pull-right" data-src="holder.js/512x512">
+  <h2 class="featurette-heading">First feature heading. <span class="text-muted">It's amazing</span></h2>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="featurette">
+  <img class="featurette-image img-circle pull-right" data-src="holder.js/512x512">
+  <h2 class="featurette-heading">Second feature heading. <span class="text-muted">It's amazing</span></h2>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="featurette">
+<img class="featurette-image img-circle pull-right" data-src="holder.js/512x512">
+<h2 class="featurette-heading">Third feature heading. <span class="text-muted">It's amazing</span></h2>
+<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>    
+
+
+<hr class="featurette-divider">
+
+</div>
+</div>
+<!-- Put in a CC By-SA 3.0 License -->
+    <!-- http://creativecommons.org/license -->
+    <div class="footer">
+        <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page</p>
+    </div>
+
   </body>
 </html>
